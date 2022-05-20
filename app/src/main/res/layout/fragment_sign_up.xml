@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_blue"
+    tools:context=".SignUpFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fullName"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_singup"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="8dp"
+            android:hint="Full Name"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_singup"
+            android:drawableStart="@drawable/ic_baseline_lock_open_24"
+            android:drawablePadding="8dp"
+            android:hint="Enter Your Phone Number"
+            android:inputType="phone"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/white"
+
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_singup"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_baseline_mail_outline_24"
+            android:drawablePadding="8dp"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="220dp"
+        android:textColor="@color/white"
+
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_singup"
+            android:drawableStart="@drawable/ic_baseline_lock_open_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/white"
+            android:hint="Enter Your password"
+            android:inputType="numberPassword"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login2"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/btn_login"
+        android:text="Log In"
+        android:textColor="@color/white" />
+
+</FrameLayout>
